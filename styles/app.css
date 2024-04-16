@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes FadeIn {
+    0% {
+        filter:opacity(0);
+    }
+    100% {
+        filter:opacity(1);
+    }
+}
+
+body {
+    margin:0px;
+    user-select: none;
+}
+
+.FadeIn {
+    filter:opacity(0);
+    animation-name: FadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 1.25s;
+}
+
+.delay-100 {
+    animation-delay: 100ms;
+}
+
+.delay-250 {
+    animation-delay: 250ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(rgb(139,92,246), rgb(91,33,182));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 32px rgba(128, 46, 251, 0.829);
+}

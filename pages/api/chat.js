@@ -4,6 +4,7 @@ let key = "AIzaSyAg2LaLrNoF06lUy3TT840p83oRBy8d4Fw" //hide
 const genAI = new GoogleGenerativeAI(key)
 const model = genAI.getGenerativeModel({model: "gemini-pro"})
 
+
 async function PromptLLM(Prompt) {
     let result = await model.generateContent(Prompt);
     let response = await result.response;

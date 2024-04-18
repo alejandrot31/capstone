@@ -10,8 +10,8 @@ export default function Nav(Params) {
             </div>
   
             <div className='w-1/2 flex items-center justify-end'> {/* Right */}
-            <Button className="mr-4" Size='Small' Type="Outline"> <a href={'/Home'}> Home </a> </Button> 
-          <Button className="mr-8" Type="Primary" Size="Small"> <a href={'/Search'}> Test </a> </Button>
+            <Button className="mr-4" Size='Small' Type="Outline"> <a href={'/test'}> Home </a> </Button> 
+          <Button className="mr-8" Type="Primary" Size="Small"> <a href={'/product'}> Test </a> </Button>
                 {Params.children}
             </div>
           </div>

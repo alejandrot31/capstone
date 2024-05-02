@@ -1,8 +1,10 @@
 //
-const {GoogleGenerativeAI} = require("@google/generative-ai")
+const {GoogleGenerativeAI} = require("@google/generative-ai");
+const sqlite3 = require('sqlite3').verbose();
 let key = "AIzaSyAg2LaLrNoF06lUy3TT840p83oRBy8d4Fw" //hide
 const genAI = new GoogleGenerativeAI(key)
 const model = genAI.getGenerativeModel({model: "gemini-pro"})
+const conversationsdb = new sqlite3.Database('mydatabase.db');
 
 
 async function PromptLLM(Prompt) {
